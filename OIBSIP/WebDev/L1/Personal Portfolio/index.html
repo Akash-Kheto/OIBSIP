@@ -1,0 +1,1189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Akash Kheto - Software Development Engineer Portfolio"
+    />
+
+    <meta name="author" content="Akash Kheto" />
+
+    <title>Akash Kheto | Software Development Engineer</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+
+  <body>
+    <!-- ================= PRELOADER ================= -->
+
+    <div id="preloader" class="preloader">
+      <div class="preloader-logo">Akash<span>.</span></div>
+
+      <div class="preloader-spinner"></div>
+    </div>
+
+    <!-- ================= SCROLL PROGRESS ================= -->
+
+    <div class="scroll-progress">
+      <div id="scrollProgressBar" class="scroll-progress-bar"></div>
+    </div>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="header">
+      <nav class="navbar">
+        <a href="#home" class="logo"> Akash<span>.</span> </a>
+
+        <div class="nav-right">
+          <ul class="nav-links" id="navLinks">
+            <li>
+              <a href="#home" class="active">Home</a>
+            </li>
+
+            <li>
+              <a href="#about">About</a>
+            </li>
+
+            <li>
+              <a href="#skills">Skills</a>
+            </li>
+
+            <li>
+              <a href="#projects">Projects</a>
+            </li>
+
+            <li>
+              <a href="#experience">Experience</a>
+            </li>
+
+            <li>
+              <a href="#certifications">Certificates</a>
+            </li>
+
+            <li>
+              <a href="#education">Education</a>
+            </li>
+
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+
+          <button id="themeBtn" class="theme-btn" title="Toggle Theme">
+            <i class="fa-solid fa-sun"></i>
+          </button>
+
+          <button id="menuBtn" class="menu-btn">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ================= HERO ================= -->
+
+    <main>
+      <section id="home" class="hero section">
+        <div class="hero-content">
+          <p class="hero-small">Hello, I'm</p>
+
+          <h1>Akash Kheto</h1>
+
+          <h2>
+            I'm a
+            <span id="typingText"></span>
+          </h2>
+
+          <p class="hero-description">
+            I am a Computer Science Engineering student passionate about
+            software development, web development, data analytics and problem
+            solving.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#projects" class="btn primary-btn"> View Projects </a>
+
+            <a href="#contact" class="btn secondary-btn"> Contact Me </a>
+
+            <a
+              href="assets/Akash-Kheto-Resume.pdf"
+              class="btn resume-btn"
+              download
+            >
+              <i class="fa-solid fa-download"></i>
+
+              Resume
+            </a>
+          </div>
+
+          <div class="social-links">
+            <a
+              href="https://github.com/Akash-Kheto"
+              target="_blank"
+              title="GitHub"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/akash-kheto/"
+              target="_blank"
+              title="LinkedIn"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <a href="mailto:akashkheto955@gmail.com" title="Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <div class="profile-container">
+            <div class="profile-glow"></div>
+
+            <img
+              src="assets/photo.jpeg"
+              alt="Akash Kheto"
+              class="profile-image"
+              onerror="
+                this.style.display = 'none';
+                document.getElementById('profileFallback').style.display =
+                  'flex';
+              "
+            />
+
+            <div id="profileFallback" class="profile-fallback">AK</div>
+          </div>
+
+          <div class="floating-card card-one">
+            <i class="fa-solid fa-code"></i>
+            <span>Developer</span>
+          </div>
+
+          <div class="floating-card card-two">
+            <i class="fa-solid fa-database"></i>
+            <span>Data</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= ABOUT ================= -->
+
+      <section id="about" class="section">
+        <div class="section-heading">
+          <p>ABOUT ME</p>
+
+          <h2>
+            Software Developer &
+            <span>Problem Solver</span>
+          </h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I am Akash Kheto, a Computer Science Engineering student pursuing
+              B.Tech at Dr. Sudhir Chandra Sur Institute of Technology and
+              Sports Complex.
+            </p>
+
+            <p>
+              I enjoy building web applications, solving programming problems
+              and working with data.
+            </p>
+
+            <p>
+              My current technical interests include software development,
+              React.js, JavaScript, Python, SQL and data analytics.
+            </p>
+          </div>
+
+          <div class="about-stats">
+            <div class="stat-box">
+              <h3 data-count="10" data-suffix="+">0</h3>
+              <p>Technologies</p>
+            </div>
+
+            <div class="stat-box">
+              <h3 data-count="10" data-suffix="+">0</h3>
+              <p>Projects</p>
+            </div>
+
+            <div class="stat-box">
+              <h3 data-count="100" data-suffix="%">0</h3>
+              <p>Learning</p>
+            </div>
+
+            <div class="stat-box">
+              <h3>∞</h3>
+              <p>Curiosity</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= SKILLS ================= -->
+
+      <section id="skills" class="skills-section">
+        <div class="container">
+          <h2>Technical Skills</h2>
+          <p class="section-subtitle">
+            Technologies and tools I use to build reliable and scalable
+            software.
+          </p>
+
+          <div class="skills-grid">
+            <!-- Programming Languages -->
+            <div class="skill-card">
+              <h3>💻 Programming Languages</h3>
+              <div class="skill-list">
+                <span>C++</span>
+                <span>JavaScript</span>
+                <span>Python</span>
+                <span>Java</span>
+              </div>
+            </div>
+
+            <!-- DSA -->
+            <div id="coding-dsa" class="skill-card">
+              <h3>🧠 DSA &amp; Problem Solving</h3>
+              <div class="skill-list">
+                <span>Data Structures</span>
+                <span>Algorithms</span>
+                <span>STL</span>
+              </div>
+            </div>
+
+            <!-- Data Analytics -->
+            <div id="data-analytics" class="skill-card">
+              <h3>📊 Data Analytics</h3>
+              <div class="skill-list">
+                <span>Python</span>
+                <span>Pandas</span>
+                <span>NumPy</span>
+                <span>SQL</span>
+              </div>
+            </div>
+
+            <!-- Web Development -->
+            <div class="skill-card">
+              <h3>🌐 Web Development</h3>
+              <div class="skill-list">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+                <span>React.js</span>
+              </div>
+            </div>
+
+            <!-- Backend -->
+            <div class="skill-card">
+              <h3>⚙️ Backend Development</h3>
+              <div class="skill-list">
+                <span>Node.js</span>
+                <span>Express.js</span>
+                <span>REST API</span>
+                <span>Socket.IO</span>
+              </div>
+            </div>
+
+            <!-- Database -->
+            <div class="skill-card">
+              <h3>🗄️ Database</h3>
+              <div class="skill-list">
+                <span>MongoDB</span>
+                <span>MySQL</span>
+                <span>SQL</span>
+                <span>Mongoose</span>
+              </div>
+            </div>
+
+            <!-- Tools -->
+            <div class="skill-card">
+              <h3>🛠️ Tools &amp; Technologies</h3>
+              <div class="skill-list">
+                <span>Git</span>
+                <span>GitHub</span>
+                <span>VS Code</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= DEVELOPER ACTIVITY ================= -->
+
+      <section
+        id="developer-activity"
+        class="section developer-activity-section"
+      >
+        <div class="activity-glow activity-glow-one" aria-hidden="true"></div>
+        <div class="activity-glow activity-glow-two" aria-hidden="true"></div>
+
+        <div class="section-heading">
+          <p>DEVELOPER ACTIVITY</p>
+
+          <h2>
+            My
+            <span>Developer Activity</span>
+          </h2>
+
+          <p class="activity-subtitle">
+            Building, Coding, Analyzing, and Learning Every Day
+          </p>
+        </div>
+
+        <div class="activity-grid">
+          <a
+            href="https://github.com/Akash-Kheto"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="activity-card profile-card"
+            aria-label="Visit GitHub"
+          >
+            <div
+              class="activity-icon activity-icon-github"
+              role="img"
+              aria-label="GitHub logo"
+              title="GitHub"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.86 8.17 6.84 9.5.5.1.68-.22.68-.48v-1.87c-2.78.62-3.37-1.2-3.37-1.2-.45-1.15-1.11-1.46-1.11-1.46-.91-.62.07-.61.07-.61 1.01.07 1.54 1.06 1.54 1.06.9 1.52 2.35 1.08 2.92.83.09-.65.35-1.08.64-1.33-2.22-.26-4.56-1.11-4.56-4.95 0-1.09.39-1.98 1.03-2.68-.1-.26-.45-1.3.1-2.72 0 0 .84-.27 2.75 1.05A9.52 9.52 0 0 1 12 6.67c.85 0 1.7.12 2.5.35 1.91-1.32 2.75-1.05 2.75-1.05.55 1.42.2 2.46.1 2.72.64.7 1.03 1.59 1.03 2.68 0 3.85-2.34 4.69-4.57 4.94.36.31.68.92.68 1.86v2.76c0 .27.18.59.69.49A10 10 0 0 0 22 12c0-5.52-4.48-10-10-10Z"
+                />
+              </svg>
+            </div>
+
+            <div class="activity-content">
+              <h3>GitHub</h3>
+
+              <p>
+                Open-source repositories, projects, and development activity.
+              </p>
+
+              <div class="activity-tags" aria-label="GitHub topics">
+                <span>Repositories</span>
+                <span>Projects</span>
+                <span>Development</span>
+              </div>
+
+              <span class="activity-link">
+                View GitHub
+                <i data-lucide="ArrowUpRight"></i>
+              </span>
+            </div>
+          </a>
+
+          <a
+            href="#projects"
+            class="activity-card profile-card"
+            aria-label="View Projects"
+          >
+            <div
+              class="activity-icon activity-icon-projects"
+              role="img"
+              aria-label="Projects folder icon"
+              title="Projects"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M3 7.5A2.5 2.5 0 0 1 5.5 5H10l2 2h6.5A2.5 2.5 0 0 1 21 9.5v8a2.5 2.5 0 0 1-2.5 2.5h-13A2.5 2.5 0 0 1 3 17.5v-10Z"
+                />
+                <path d="M3 9h18" />
+                <path d="m9 14 2 2 4-4" />
+              </svg>
+            </div>
+
+            <div class="activity-content">
+              <h3>Projects</h3>
+
+              <p>Practical software development and data analytics projects.</p>
+
+              <div class="activity-tags" aria-label="Project topics">
+                <span>Software</span>
+                <span>Web</span>
+                <span>Analytics</span>
+              </div>
+
+              <span class="activity-link">
+                View Projects
+                <i data-lucide="ArrowUpRight"></i>
+              </span>
+            </div>
+          </a>
+
+          <a
+            href="#coding-dsa"
+            class="activity-card profile-card"
+            aria-label="Explore Coding and DSA"
+          >
+            <div
+              class="activity-icon activity-icon-coding"
+              role="img"
+              aria-label="Coding and DSA icon"
+              title="Coding &amp; DSA"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="m8 8-4 4 4 4M16 8l4 4-4 4M14 5l-4 14" />
+              </svg>
+            </div>
+
+            <div class="activity-content">
+              <h3>Coding &amp; DSA</h3>
+
+              <p>
+                Practicing C++, Data Structures, Algorithms, competitive
+                programming, and problem solving.
+              </p>
+
+              <div class="activity-tags" aria-label="Coding topics">
+                <span>C++</span>
+                <span>DSA</span>
+                <span>CP</span>
+              </div>
+
+              <span class="activity-link">
+                Explore Coding
+                <i data-lucide="ArrowUpRight"></i>
+              </span>
+            </div>
+          </a>
+
+          <a
+            href="#data-analytics"
+            class="activity-card profile-card"
+            aria-label="View Data Analytics"
+          >
+            <div
+              class="activity-icon activity-icon-analytics"
+              role="img"
+              aria-label="Data analytics icon"
+              title="Data Analytics"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 20V10M10 20V4M16 20v-7M22 20H2" />
+                <path d="m16 6 3 3 3-5" />
+              </svg>
+            </div>
+
+            <div class="activity-content">
+              <h3>Data Analytics</h3>
+
+              <p>
+                Working with Python, Pandas, SQL, Excel, Power BI, and data
+                visualization.
+              </p>
+
+              <div class="activity-tags" aria-label="Analytics topics">
+                <span>Python</span>
+                <span>SQL</span>
+                <span>Power BI</span>
+              </div>
+
+              <span class="activity-link">
+                View Analytics
+                <i data-lucide="ArrowUpRight"></i>
+              </span>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- ================= PROJECTS ================= -->
+
+      <section id="projects" class="section">
+        <div class="section-heading">
+          <p>MY WORK</p>
+
+          <h2>
+            Featured
+            <span>Projects</span>
+          </h2>
+        </div>
+
+        <!-- Search -->
+
+        <div class="project-tools">
+          <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+              type="text"
+              id="projectSearch"
+              placeholder="Search projects..."
+            />
+          </div>
+        </div>
+
+        <!-- Filters -->
+
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">All</button>
+
+          <button class="filter-btn" data-filter="web">Web</button>
+
+          <button class="filter-btn" data-filter="react">React</button>
+
+          <button class="filter-btn" data-filter="data">Data</button>
+
+          <button class="filter-btn" data-filter="powerbi">Power BI</button>
+
+          <button class="filter-btn" data-filter="excel">Excel</button>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+          <!-- PROJECT 1 -->
+
+          <article
+            class="project-card"
+            data-category="web"
+            data-title="E-Commerce Website"
+          >
+            <div class="project-icon">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+
+            <span class="project-type"> Web Development </span>
+
+            <h3>E-Commerce Website</h3>
+
+            <p>
+              Responsive e-commerce website with product cards, navigation, cart
+              functionality and responsive design.
+            </p>
+
+            <div class="tech-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+
+            <div class="project-actions">
+              <button class="details-btn" data-project="ecommerce">
+                View Details
+              </button>
+
+              <a href="#" class="github-btn">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- PROJECT 2 -->
+
+          <article
+            class="project-card"
+            data-category="powerbi"
+            data-title="Madhav E-Commerce Dashboard"
+          >
+            <div class="project-icon">
+              <i class="fa-solid fa-chart-line"></i>
+            </div>
+
+            <span class="project-type"> Data Analytics </span>
+
+            <h3>Madhav E-Commerce Dashboard</h3>
+
+            <p>
+              Interactive Power BI dashboard for analyzing sales, quantity,
+              payment methods and profit.
+            </p>
+
+            <div class="tech-tags">
+              <span>Power BI</span>
+              <span>DAX</span>
+              <span>Data Analysis</span>
+            </div>
+
+            <div class="project-actions">
+              <button class="details-btn" data-project="madhav">
+                View Details
+              </button>
+
+              <a href="#" class="github-btn">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- PROJECT 3 -->
+
+          <article
+            class="project-card"
+            data-category="excel"
+            data-title="Vrinda Store Data Analysis"
+          >
+            <div class="project-icon">
+              <i class="fa-solid fa-file-excel"></i>
+            </div>
+
+            <span class="project-type"> Excel Analytics </span>
+
+            <h3>Vrinda Store Data Analysis</h3>
+
+            <p>
+              Excel-based sales analysis using PivotTables, PivotCharts and
+              slicers.
+            </p>
+
+            <div class="tech-tags">
+              <span>Excel</span>
+              <span>PivotTable</span>
+              <span>Charts</span>
+            </div>
+
+            <div class="project-actions">
+              <button class="details-btn" data-project="vrinda">
+                View Details
+              </button>
+
+              <a
+                href="https://github.com/Akash-Kheto/Excel-Projects"
+                target="_blank"
+                class="github-btn"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- PROJECT 4 -->
+
+          <article
+            class="project-card"
+            data-category="react"
+            data-title="Kishan Setu"
+          >
+            <div class="project-icon">
+              <i class="fa-solid fa-tractor"></i>
+            </div>
+
+            <span class="project-type"> Full Stack </span>
+
+            <h3>Kishan Setu</h3>
+
+            <p>
+              Smart farmer procurement management system designed to improve
+              procurement scheduling and status tracking.
+            </p>
+
+            <div class="tech-tags">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>MongoDB</span>
+            </div>
+
+            <div class="project-actions">
+              <button class="details-btn" data-project="kishan">
+                View Details
+              </button>
+
+              <a href="#" class="github-btn">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- PROJECT 5 -->
+
+          <article
+            class="project-card"
+            data-category="data"
+            data-title="E-Commerce Data Analysis"
+          >
+            <div class="project-icon">
+              <i class="fa-solid fa-database"></i>
+            </div>
+
+            <span class="project-type"> Data Analytics </span>
+
+            <h3>E-Commerce Data Analysis</h3>
+
+            <p>
+              Data analysis project using Python and Pandas to clean, analyze
+              and visualize e-commerce data.
+            </p>
+
+            <div class="tech-tags">
+              <span>Python</span>
+              <span>Pandas</span>
+              <span>NumPy</span>
+            </div>
+
+            <div class="project-actions">
+              <button class="details-btn" data-project="python">
+                View Details
+              </button>
+
+              <a href="#" class="github-btn">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- PROJECT 6 -->
+
+          <article
+            class="project-card"
+            data-category="data"
+            data-title="Fake News Detection"
+          >
+            <div class="project-icon">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+
+            <span class="project-type"> Machine Learning </span>
+
+            <h3>Fake News Detection</h3>
+
+            <p>
+              Text classification project using Python and machine learning
+              techniques to classify news content.
+            </p>
+
+            <div class="tech-tags">
+              <span>Python</span>
+              <span>Pandas</span>
+              <span>ML</span>
+            </div>
+
+            <div class="project-actions">
+              <button class="details-btn" data-project="fake">
+                View Details
+              </button>
+
+              <a href="#" class="github-btn">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ================= EXPERIENCE ================= -->
+
+      <section id="experience" class="section">
+        <div class="section-heading">
+          <p>EXPERIENCE</p>
+
+          <h2>
+            My
+            <span>Journey</span>
+          </h2>
+        </div>
+
+        <!-- Edit these entries to match your own experience -->
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-content">
+              <span> 2024 – Present </span>
+
+              <h3>Web Development Projects</h3>
+
+              <h4>Self-Driven</h4>
+
+              <p>
+                Building responsive websites and full-stack applications using
+                React, Node.js and MongoDB, with a focus on clean UI and
+                real-world functionality.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-content">
+              <span> 2024 </span>
+
+              <h3>Data Analytics Practice</h3>
+
+              <h4>Personal & Academic Projects</h4>
+
+              <p>
+                Working on data analysis and visualization projects using
+                Python, Pandas, Excel and Power BI to turn raw data into useful
+                insights.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= CERTIFICATIONS ================= -->
+
+      <section id="certifications" class="section">
+        <div class="section-heading">
+          <p>CERTIFICATIONS</p>
+
+          <h2>
+            Learning &
+            <span>Achievements</span>
+          </h2>
+        </div>
+
+        <div class="certificate-grid">
+          <div class="certificate-card">
+            <div class="certificate-icon">
+              <i class="fa-solid fa-certificate"></i>
+            </div>
+
+            <div>
+              <h3>TCS iON Career Edge – AI Foundation</h3>
+
+              <p>TCS iON</p>
+
+              <span>
+                AI • Generative AI • Prompt Engineering • Responsible AI
+              </span>
+            </div>
+          </div>
+
+          <div class="certificate-card">
+            <div class="certificate-icon">
+              <i class="fa-solid fa-cloud"></i>
+            </div>
+
+            <div>
+              <h3>AWS Solutions Architecture Job Simulation</h3>
+
+              <p>Forage</p>
+
+              <span> Cloud • Architecture • Problem Solving </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= GITHUB STATS ================= -->
+
+      <section id="github" class="section">
+        <div class="section-heading">
+          <p>GITHUB</p>
+
+          <h2>
+            My
+            <span>Developer Activity</span>
+          </h2>
+        </div>
+
+        <div class="github-stats">
+          <div class="github-stat">
+            <i class="fa-brands fa-github"></i>
+
+            <h3>GitHub</h3>
+
+            <p>Explore my repositories, projects and development work.</p>
+
+            <a
+              href="https://github.com/Akash-Kheto"
+              target="_blank"
+              class="btn primary-btn"
+            >
+              Visit GitHub
+            </a>
+          </div>
+
+          <div class="github-stat">
+            <i class="fa-solid fa-code-branch"></i>
+
+            <h3>Projects</h3>
+
+            <p>Web development, React, analytics and programming projects.</p>
+          </div>
+
+          <div class="github-stat">
+            <i class="fa-solid fa-laptop-code"></i>
+
+            <h3>Continuous Learning</h3>
+
+            <p>
+              Improving coding and problem-solving skills through regular
+              practice.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= EDUCATION ================= -->
+
+      <section id="education" class="section">
+        <div class="section-heading">
+          <p>EDUCATION</p>
+
+          <h2>
+            My
+            <span>Education</span>
+          </h2>
+        </div>
+
+        <div class="timeline education-timeline">
+          <article class="timeline-item education-item education-current">
+            <div class="timeline-dot">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+
+            <div class="timeline-content">
+              <div class="education-meta">
+                <span class="education-period"
+                  >2024 – 2028 | Currently Pursuing</span
+                >
+                <span class="education-status">
+                  <i class="fa-solid fa-circle"></i>
+                  Currently Pursuing
+                </span>
+              </div>
+
+              <h3>B.Tech — Computer Science &amp; Engineering</h3>
+
+              <p class="education-institution">
+                Dr. Sudhir Chandra Sur Institute of Technology and Sports
+                Complex
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item education-item">
+            <div class="timeline-dot">
+              <i class="fa-solid fa-school"></i>
+            </div>
+
+            <div class="timeline-content">
+              <span class="education-period">Class XII — Science</span>
+
+              <h3>Kailash Chandra Sadhukhan High School</h3>
+
+              <p class="education-board">
+                WBCHSE (West Bengal Council of Higher Secondary Education)
+              </p>
+
+              <p class="education-percentage">Percentage: 83.60%</p>
+            </div>
+          </article>
+
+          <article class="timeline-item education-item">
+            <div class="timeline-dot">
+              <i class="fa-solid fa-book-open"></i>
+            </div>
+
+            <div class="timeline-content">
+              <span class="education-period">Class X</span>
+
+              <h3>Kailash Chandra Sadhukhan High School</h3>
+
+              <p class="education-board">
+                WBBSE (West Bengal Board of Secondary Education)
+              </p>
+
+              <p class="education-percentage">Percentage: 81.85%</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ================= CONTACT ================= -->
+
+      <section id="contact" class="section">
+        <div class="section-heading">
+          <p>CONTACT ME</p>
+
+          <h2>
+            Let's
+            <span>Connect</span>
+          </h2>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h3>Let's work together</h3>
+
+            <p>
+              I am open to software development, web development and
+              data-related opportunities.
+            </p>
+
+            <div class="contact-item">
+              <i class="fa-solid fa-envelope"></i>
+
+              <div>
+                <span>Email</span>
+
+                <a href="mailto:akashkheto955@gmail.com">
+                  akashkheto955@gmail.com
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <i class="fa-brands fa-github"></i>
+
+              <div>
+                <span>GitHub</span>
+
+                <a href="https://github.com/Akash-Kheto" target="_blank">
+                  github.com/Akash-Kheto
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <i class="fa-brands fa-linkedin"></i>
+
+              <div>
+                <span>LinkedIn</span>
+
+                <a
+                  href="https://www.linkedin.com/in/akash-kheto/"
+                  target="_blank"
+                >
+                  linkedin.com/in/akash-kheto
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- CONTACT FORM -->
+
+          <form
+            id="contactForm"
+            class="contact-form"
+            action="/api/contact"
+            method="POST"
+          >
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name"> Name </label>
+
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your name"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email"> Email </label>
+
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Your email"
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="subject"> Subject </label>
+
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Subject"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="message"> Message </label>
+
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                placeholder="Your message"
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn primary-btn">
+              <i class="fa-solid fa-paper-plane"></i>
+
+              Send Message
+            </button>
+
+            <p id="formStatus" class="form-status"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= PROJECT MODAL ================= -->
+
+    <div id="projectModal" class="modal">
+      <div class="modal-content">
+        <button id="closeModal" class="close-modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <div id="modalContent"></div>
+      </div>
+    </div>
+
+    <!-- ================= WHATSAPP ================= -->
+
+    <a
+      href="https://wa.me/"
+      target="_blank"
+      class="whatsapp-btn"
+      title="WhatsApp"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- ================= BACK TO TOP ================= -->
+
+    <button id="backToTop" class="back-to-top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+      <div class="footer-content">
+        <h3>Akash<span>.</span></h3>
+
+        <p>Software Development Engineer</p>
+
+        <div class="footer-socials">
+          <a href="https://github.com/Akash-Kheto" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+
+          <a href="https://www.linkedin.com/in/akash-kheto/" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+
+          <a href="mailto:akashkheto955@gmail.com">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
+
+        <p class="copyright">
+          © <span id="year"></span>
+          Akash Kheto. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
