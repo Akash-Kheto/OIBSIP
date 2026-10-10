@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | SecureAuth</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="auth-container">
+    <section class="auth-card">
+      <a href="index.html" class="brand">
+        <span class="brand-icon">A</span>AaharMitra
+      </a>
+
+      <div class="auth-heading">
+        <span class="eyebrow">WELCOME BACK</span>
+        <h1>Sign in to your account</h1>
+        <p>Enter your details to continue to your dashboard.</p>
+      </div>
+
+      <form id="loginForm">
+        <label for="loginEmail">Email address</label>
+        <input type="email" id="loginEmail"
+               placeholder="you@example.com" autocomplete="username" required>
+
+        <label for="loginPassword">Password</label>
+        <input type="password" id="loginPassword"
+               placeholder="Enter your password"
+               autocomplete="current-password" required>
+
+        <p id="loginMessage" class="message" role="alert"></p>
+
+        <button type="submit" class="btn">Sign In <span>→</span></button>
+      </form>
+
+      <p class="auth-footer">
+        Don't have an account?
+        <a href="register.html">Create account</a>
+      </p>
+
+      <p class="security-note">Demo project · Client-side authentication</p>
+    </section>
+  </main>
+</body>
+</html>
