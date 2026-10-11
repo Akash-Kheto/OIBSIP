@@ -63,9 +63,7 @@ My goal is to strengthen my frontend development skills by building practical, r
 
 ## Task 1 — Landing Page
 
-<p align="center">
-  <img src="./assets/images/landing-page.png" alt="Landing Page project preview" width="90%" />
-</p>
+
 
 **Description:** A visually appealing landing page created to practice webpage structure, modern layouts, typography, colors and CSS styling.
 
@@ -86,9 +84,7 @@ My goal is to strengthen my frontend development skills by building practical, r
 
 ## Task 2 — Personal Portfolio
 
-<p align="center">
-  <img src="./assets/images/personal-portfolio.png" alt="Personal Portfolio project preview" width="90%" />
-</p>
+
 
 **Description:** A personal portfolio website to showcase my profile, technical skills, projects, education and contact information.
 
