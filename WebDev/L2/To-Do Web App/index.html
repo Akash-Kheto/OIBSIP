@@ -1,0 +1,233 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#101114" />
+  <meta name="description" content="A beautiful productivity dashboard to organize daily tasks." />
+  <title>TaskFlow — Your Daily Workspace</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#" aria-label="TaskFlow home">
+        <span class="brand-icon">✓</span>
+        <span>taskflow<span class="brand-dot">.</span></span>
+      </a>
+
+      <div class="sidebar-label">WORKSPACE</div>
+
+      <nav class="side-nav" aria-label="Task filters">
+        <button class="nav-item active" data-filter="all">
+          <span class="nav-symbol">▦</span>
+          All Tasks
+          <span class="nav-count" id="allNavCount">0</span>
+        </button>
+
+        <button class="nav-item" data-filter="pending">
+          <span class="nav-symbol">◷</span>
+          Pending
+          <span class="nav-count" id="pendingNavCount">0</span>
+        </button>
+
+        <button class="nav-item" data-filter="completed">
+          <span class="nav-symbol">✓</span>
+          Completed
+          <span class="nav-count" id="completedNavCount">0</span>
+        </button>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <div class="sidebar-mini-icon">✦</div>
+        <p class="sidebar-tip-title">Small steps, big wins.</p>
+        <p class="sidebar-tip-text">
+          Stay consistent. Every completed task moves you forward.
+        </p>
+        <div class="tip-progress">
+          <span id="tipProgress"></span>
+        </div>
+        <p class="tip-progress-label" id="tipProgressLabel">0% completed</p>
+      </div>
+
+      <div class="sidebar-footer">
+        <span class="status-dot"></span>
+        Your workspace is ready
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div class="breadcrumb">
+          Workspace <span>/</span> <strong>My Tasks</strong>
+        </div>
+
+        <div class="topbar-right">
+          <span class="today-badge">
+            <span>●</span> Personal workspace
+          </span>
+          <div class="avatar" aria-label="User avatar">A</div>
+        </div>
+      </header>
+
+      <section class="welcome-section">
+        <div>
+          <p class="eyebrow">
+            <span class="eyebrow-line"></span>
+            YOUR PRODUCTIVITY HUB
+          </p>
+
+          <h1>Make today<br /> <span>count.</span></h1>
+
+          <p class="welcome-subtitle">
+            A little progress every day adds up to big results.
+          </p>
+        </div>
+
+        <div class="date-card">
+          <div class="date-icon">▦</div>
+          <div>
+            <p id="currentDay">Today</p>
+            <h3 id="currentDate">Loading date...</h3>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats-grid" aria-label="Task statistics">
+        <article class="stat-card">
+          <div class="stat-top">
+            <span>Total tasks</span>
+            <span class="stat-icon total-icon">▦</span>
+          </div>
+          <h2 id="totalCount">0</h2>
+          <p>Tasks in your workspace</p>
+        </article>
+
+        <article class="stat-card">
+          <div class="stat-top">
+            <span>Pending tasks</span>
+            <span class="stat-icon pending-icon">◷</span>
+          </div>
+          <h2 id="pendingCount">0</h2>
+          <p>Ready for your attention</p>
+        </article>
+
+        <article class="stat-card">
+          <div class="stat-top">
+            <span>Completed</span>
+            <span class="stat-icon completed-icon">✓</span>
+          </div>
+          <h2 id="completedCount">0</h2>
+          <p>Wins worth celebrating</p>
+        </article>
+
+        <article class="stat-card">
+          <div class="stat-top">
+            <span>Progress</span>
+            <span class="stat-icon progress-icon">↗</span>
+          </div>
+          <h2 id="progressCount">0%</h2>
+          <div class="progress-track">
+            <span id="mainProgress"></span>
+          </div>
+        </article>
+      </section>
+
+      <section class="task-composer">
+        <div class="composer-heading">
+          <div>
+            <p class="section-kicker">PLAN YOUR NEXT MOVE</p>
+            <h2>Add a new task<span>.</span></h2>
+          </div>
+          <span class="keyboard-hint">Press Enter ↵</span>
+        </div>
+
+        <form id="taskForm" class="task-form">
+          <label class="input-wrap" for="taskInput">
+            <span class="input-plus">＋</span>
+            <input
+              type="text"
+              id="taskInput"
+              placeholder="What would you like to accomplish?"
+              maxlength="200"
+              autocomplete="off"
+              required
+              aria-label="New task"
+            />
+          </label>
+
+          <button type="submit" class="add-button">
+            <span>＋</span> Add Task
+          </button>
+        </form>
+
+        <p class="form-hint" id="formHint" aria-live="polite">
+          One task at a time. You've got this.
+        </p>
+      </section>
+
+      <section class="task-workspace">
+        <div class="workspace-heading">
+          <div>
+            <p class="section-kicker">YOUR ACTION BOARD</p>
+            <h2>Task overview<span>.</span></h2>
+          </div>
+
+          <label class="search-box">
+            <span>⌕</span>
+            <input id="searchInput" type="search" placeholder="Search tasks..." aria-label="Search tasks" />
+          </label>
+        </div>
+
+        <div class="filter-row" role="group" aria-label="Filter tasks">
+          <button class="filter-chip active" data-filter="all">All tasks</button>
+          <button class="filter-chip" data-filter="pending">Pending</button>
+          <button class="filter-chip" data-filter="completed">Completed</button>
+        </div>
+
+        <div class="task-columns">
+          <section class="task-column pending-column">
+            <div class="column-heading">
+              <div class="column-title">
+                <span class="column-indicator pending-indicator"></span>
+                <h3>Pending Tasks</h3>
+              </div>
+              <span class="column-count" id="pendingListCount">0 pending</span>
+            </div>
+
+            <div id="pendingList" class="task-list" aria-live="polite"></div>
+          </section>
+
+          <section class="task-column completed-column">
+            <div class="column-heading">
+              <div class="column-title">
+                <span class="column-indicator completed-indicator"></span>
+                <h3>Completed Tasks</h3>
+              </div>
+              <span class="column-count" id="completedListCount">0 completed</span>
+            </div>
+
+            <div id="completedList" class="task-list" aria-live="polite"></div>
+          </section>
+        </div>
+      </section>
+
+      <footer class="main-footer">
+        <span>Built for better days <span class="footer-heart">♥</span></span>
+        <span>TaskFlow <span class="footer-separator">·</span> Stay focused. Keep moving.</span>
+      </footer>
+    </main>
+  </div>
+
+  <noscript>
+    <p class="noscript-message">Please enable JavaScript to use TaskFlow.</p>
+  </noscript>
+</body>
+</html>
