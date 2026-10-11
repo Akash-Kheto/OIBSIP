@@ -55,9 +55,7 @@ The objective of this project is to build a visually polished static landing pag
 
 Add a screenshot of your actual landing page here.
 
-<p align="center">
-  <img src="./assets/landing-page.png" alt="Landing Page Screenshot" width="90%" />
-</p>
+
 
 *If your screenshot is stored elsewhere, update the image path above.*
 
@@ -68,8 +66,6 @@ L1-Task1-Landing-Page/
 │
 ├── index.html
 ├── style.css
-├── assets/
-│   └── landing-page.png
 └── README.md
 ```
 
@@ -89,7 +85,7 @@ Your filenames may differ depending on your implementation.
    cd OIBSIP
    ```
 
-3. Open the `L1-Task1-Landing-Page` folder in VS Code.
+3. Open the `L1-Landing-Page` folder in VS Code.
 
 4. Open `index.html` in your browser, or use the Live Server extension.
 
