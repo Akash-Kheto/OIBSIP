@@ -106,9 +106,7 @@ My goal is to strengthen my frontend development skills by building practical, r
 
 ## Task 3 — Temperature Converter Website
 
-<p align="center">
-  <img src="./assets/images/temperature-converter.png" alt="Temperature Converter project preview" width="90%" />
-</p>
+
 
 **Description:** A temperature conversion tool that converts values between Celsius, Fahrenheit and Kelvin.
 
@@ -132,9 +130,7 @@ My goal is to strengthen my frontend development skills by building practical, r
 
 ## Task 1 — Calculator
 
-<p align="center">
-  <img src="./assets/images/calculator.png" alt="Calculator project preview" width="90%" />
-</p>
+
 
 **Description:** An interactive calculator for performing basic arithmetic operations.
 
@@ -156,10 +152,6 @@ My goal is to strengthen my frontend development skills by building practical, r
 
 ## Task 2 — Tribute Page
 
-<p align="center">
-  <img src="./assets/images/tribute-page.png" alt="Tribute Page project preview" width="90%" />
-</p>
-
 **Description:** A tribute webpage dedicated to an inspiring personality, highlighting their life, achievements and contributions.
 
 **Tech Stack:** HTML5, CSS3, JavaScript (optional)
@@ -180,9 +172,6 @@ My goal is to strengthen my frontend development skills by building practical, r
 
 ## Task 3 — To-Do Web App
 
-<p align="center">
-  <img src="./assets/images/todo-app.png" alt="To-Do Web App project preview" width="90%" />
-</p>
 
 **Description:** A task management application for organizing daily activities and tracking task completion.
 
@@ -205,9 +194,7 @@ My goal is to strengthen my frontend development skills by building practical, r
 
 ## Task 4 — Login Authentication System
 
-<p align="center">
-  <img src="./assets/images/login-authentication.png" alt="Login Authentication System project preview" width="90%" />
-</p>
+
 
 **Description:** A registration and login interface demonstrating basic client-side form validation and protected-page navigation.
 
@@ -236,25 +223,16 @@ My goal is to strengthen my frontend development skills by building practical, r
 OIBSIP/
 │
 ├── README.md
-├── assets/
-│   └── images/
-│       ├── landing-page.png
-│       ├── personal-portfolio.png
-│       ├── temperature-converter.png
-│       ├── calculator.png
-│       ├── tribute-page.png
-│       ├── todo-app.png
-│       └── login-authentication.png
-│
-├── L1-Task1-Landing-Page/
-├── Task-2-Personal-Portfolio/
-├── Task-3-Temperature-Converter/
-│
+└── L1/
+    ├──Landing-Page/
+    ├──Personal-Portfolio/
+    ├── Temperature-Converter/
+
 └── L2/
-    ├── Task-1-Calculator/
-    ├── Task-2-Tribute-Page/
-    ├── Task-3-To-Do-App/
-    └── Task-4-Login-Authentication/
+    ├── Calculator/
+    ├── Tribute-Page/
+    ├── To-Do-App/
+    └── Login-Authentication/
 ```
 
 *Keep the folder names and screenshot paths synchronized with your actual repository structure.*
